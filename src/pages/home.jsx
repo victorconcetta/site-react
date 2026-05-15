@@ -31,7 +31,7 @@ function Home() {
     src="https://placehold.co/600x400/aaaaaa/ffffff?text=BannerImagemFull"
     legenda="COMPONENTE BANNER IMAGEM FULL"
 />
-
+<br />
 <Banner3Quadrados
     src1="https://placehold.co/400x400/aaaaaa/ffffff?text=Banner"
     src2="https://placehold.co/400x400/cccccc/ffffff?text=3"
