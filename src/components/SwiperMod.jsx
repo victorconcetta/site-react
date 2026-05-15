@@ -20,7 +20,15 @@ const SwiperMod = () => {
 
         spaceBetween={0}
 
-        slidesPerView={2.2}
+         breakpoints={{
+  
+       768: {
+         slidesPerView: 1,
+       },
+       1024: {
+         slidesPerView: 3,
+       },
+      }}
 
         centeredSlides={true}
 
@@ -41,19 +49,8 @@ const SwiperMod = () => {
           disableOnInteraction: false,
         }}
 
-        /* ---------- RESPONSIVO ---------- */
-
-        // breakpoints={{
-        //   640: {
-        //     slidesPerView: 1,
-        //   },
-        //   768: {
-        //     slidesPerView: 2,
-        //   },
-        //   1024: {
-        //     slidesPerView: 3,
-        //   },
-        // }}
+      
+      
       >
         <SwiperSlide>
           <S.SlideBox>1</S.SlideBox>

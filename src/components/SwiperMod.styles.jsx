@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  width: 100vw;
+  width: 100%;
   padding: 0px;
   margin-top: 0px;
 
@@ -61,4 +61,7 @@ export const SlideBox = styled.div`
   justify-content: center;
 
   font-size: 40px;
+
+   @media (max-width: 900px) {
+     height: 250px;
 `;

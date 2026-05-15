@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Wrapper = styled.div`
     position: relative;
     width: 100%;
-    aspect-ratio: 5 / 1;
+    aspect-ratio: 4 / 1;
     overflow: hidden;
     border-radius: 10px;
 `;
@@ -19,9 +19,9 @@ export const Legenda = styled.div`
     position: absolute;
     bottom: 0;
     width: 100%;
-    padding: 20px 50px;
+    padding: 2px 50px;
     color: white;
-    font-size: 1.5rem;
+    font-size: 3dvw;
     font-weight: bold;
     text-align: right;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
