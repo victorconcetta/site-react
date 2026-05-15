@@ -1,5 +1,5 @@
 
-import * as S from './home.styles.jsx'
+import * as S from './subpaginas.styles.jsx'
 import DivComum from '../components/DivComum.jsx'
 import styled from 'styled-components'
 

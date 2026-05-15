@@ -1,7 +1,15 @@
 :root {
   /*---------cores globais------------*/
 
-    --principal: rgb(107, 153, 184);
+    --principal: rgb(176, 184, 107);
+    --principallight: color-mix(
+    in srgb,
+    var(--principal) 50%,  /*-------*/
+    rgb(255, 255, 255));
+    --principaldark: color-mix(
+    in srgb,
+    var(--principal) 90%,  /*-------*/
+    black);
     --bg: rgb(218, 217, 217);
     --font: rgb(49, 49, 49);
     --font2: rgb(199, 199, 199);
@@ -12,7 +20,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  overflow-x: hidden;
 }
 
 body, html {
@@ -20,7 +27,8 @@ body, html {
     padding: 0px;
     margin: 0px;
     top: 0px;
-    color: var(--font)
+    color: var(--font);
+    overflow-x: hidden;
 }
 
 .Subpagina {

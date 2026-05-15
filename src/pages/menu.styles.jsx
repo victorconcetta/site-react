@@ -11,7 +11,7 @@ align-items: center;
   background: var(--principal);
 
 
-  @media (max-width: 768px) {
+  @media (max-width: 900px) {
   justify-content: space-between;
   }
 `
@@ -19,13 +19,17 @@ export const DivLogo = styled.div`
 display: flex;
 align-items: center;
 justify-content: center;
-  background: var(--bg);
+  background: var(--principaldark);
   height: 100%;
   width: 20%;
   min-width: 200px;
- border-radius: 0px 30px 0px 0px;
+  
+   a{
+    text-decoration: none;
+    color: inherit;
+  }
 
-  @media (max-width: 768px) {
+  @media (max-width: 900px) {
   min-width: 150px;
   }
 
@@ -49,7 +53,7 @@ export const UlMenu = styled.ul`
   list-style: none;
   overflow: hidden;
 
-  @media (max-width: 768px) {
+  @media (max-width: 900px) {
     display: none;
   }
 `
@@ -72,7 +76,7 @@ export const LiMenu = styled.li`
   
 
 
-  a {
+  a{
     text-decoration: none;
     color: inherit;
   }
@@ -98,7 +102,7 @@ export const Hamburger = styled.div`
   height: 20px;
   cursor: pointer;
 
-   @media (min-width: 768px) {
+   @media (min-width: 900px) {
    display: none;
    }
 `
@@ -106,11 +110,11 @@ export const MenuMobile = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: #6b99b865;
+  background: var(--principallight);
   width: 100%;
   overflow: hidden;
 
-  @media (min-width: 768px) {
+  @media (min-width: 900px) {
     display: none;
   }
 `

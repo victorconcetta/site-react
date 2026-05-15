@@ -10,7 +10,7 @@ flex-direction: column;
   border: 15px solid var(--principal);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
   
-  @media (max-width: 768px) {
+  @media (max-width: 900px) {
  width: 90vw;
  border: 10px solid var(--principal);
 
@@ -19,6 +19,8 @@ flex-direction: column;
 `
 export const Content = styled.div`
 display: flex;
+align-items: center;
+flex-direction: column;
 padding: 10px;
 justify-content: center;
 text-align: justify;
