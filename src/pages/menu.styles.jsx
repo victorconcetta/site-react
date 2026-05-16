@@ -116,6 +116,7 @@ export const MenuMobile = styled.div`
   background: var(--principallight);
   width: 100%;
   overflow: hidden;
+  padding-top: 70px;
 
   @media (min-width: 900px) {
     display: none;

@@ -33,8 +33,12 @@ function MenuPrincipal() {
         <S.MenuMobile>
           <S.LiMenuMobile><Link to="/">Home</Link></S.LiMenuMobile>
           <S.LinhaHor />
-            <S.LiMenuMobile><Link to="/sobre">Sobre</Link></S.LiMenuMobile>
+            <S.LiMenuMobile><Link to="/sobre">Produtos</Link></S.LiMenuMobile>
             <S.LinhaHor />
+      <S.LiMenuMobile><Link to="/contato">Ofertas</Link></S.LiMenuMobile>
+                  <S.LinhaHor />
+      <S.LiMenuMobile><Link to="/contato">Unidades</Link></S.LiMenuMobile>
+                  <S.LinhaHor />
       <S.LiMenuMobile><Link to="/contato">Contato</Link></S.LiMenuMobile>
         </S.MenuMobile>
       )}

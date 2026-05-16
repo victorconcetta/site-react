@@ -10,13 +10,14 @@ margin: 0px;
 width: 100%;
 height: auto;
 gap: 30px;
-padding: 100px 0px 150px;
+padding: 10px 0px 150px;
 `
 export const ContainerSwiper = styled.div`
 padding-top: 140px;
 
   @media (max-width: 900px) {
 padding-top: 70px;
+
   }
 `
 export const DivCentro = styled.div`
@@ -42,6 +43,7 @@ export const DivCentroTexto = styled.div`
 h1 {
     color: var(--principaldark);
     padding-bottom: 20px;
+    text-align: center;
 }
      p {
     font-size: 30px;
@@ -58,7 +60,7 @@ h1 {
  @media (max-width: 768px) {
     
    p {
-    font-size: 24px;
+    font-size: 20px;
    } 
   }
 `
@@ -71,7 +73,7 @@ export const Ofertas = styled.div`
   align-items: center;
   position: relative;
     margin-top: 50px;
-    margin-bottom: 100px;
+    margin-bottom: 10px;
   background-image: url(${ofertas});
   background-size: cover;
   background-position: center;
@@ -99,6 +101,11 @@ export const Ofertas = styled.div`
     @keyframes piscar {
     0%, 100% { opacity: 1; }
     50% { opacity: 0; }
+  }
+
+  @media (max-width: 1500px) {
+   margin-top: 0px;
+   padding: 0px;
   }
 `
 
@@ -129,9 +136,13 @@ display: flex;
 justify-content: center;
   width: 70%;
   padding-bottom: 40px;
+  animation: piscar 1s ease-in-out infinite;
 
+   @keyframes piscar {
+    0%, 50% { opacity: 1; }
+    10% { opacity: 0; }
+   }
  @media (max-width: 1500px) {
     width: 100%;
  }
 `
-
