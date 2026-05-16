@@ -14,7 +14,7 @@ align-items: center;
 
 
  @media (max-width: 900px) {
-    height: 80px;
+    height: 70px;
     justify-content: space-between;
   }
 `
@@ -22,7 +22,6 @@ export const DivLogo = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--principaldark);
   height: 100%;
   width: 20%;
   min-width: 200px;
