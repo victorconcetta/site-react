@@ -10,10 +10,13 @@ flex-direction: column;
   border: 15px solid var(--principal);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
   
-  @media (max-width: 900px) {
- width: 90vw;
+  @media (max-width: 1500px) {
+ width: 100% !important;
  border: 10px solid var(--principal);
-
+  }
+ @media (max-width: 1024px) {
+ width: 100% !important;
+ border: 10px solid var(--principal);
   }
 
 `
@@ -21,9 +24,17 @@ export const Content = styled.div`
 display: flex;
 align-items: center;
 flex-direction: column;
-padding: 10px;
+padding: 20px;
 justify-content: center;
 text-align: justify;
+
+p {
+  font-size: clamp(16px, 2vw, 24px);
+
+    @media (max-width: 900px) {
+  font-size: 17px;
+  }
+}
 
 `
 export const Titulo = styled.h2`

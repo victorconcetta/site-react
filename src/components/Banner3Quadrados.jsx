@@ -2,9 +2,9 @@ import * as S from './Banner3Quadrados.styles.jsx'
 
 const PLACEHOLDER = 'https://placehold.co/400x400?text=Imagem';
 
-function Banner3Quadrados({ src1, src2, src3 }) {
+function Banner3Quadrados({ src1, src2, src3, style }) {
     return (
-        <S.Wrapper>
+        <S.Wrapper style={style}>
             <S.Card>
                 <S.Imagem src={src1 || PLACEHOLDER} alt="imagem 1" />
             </S.Card>

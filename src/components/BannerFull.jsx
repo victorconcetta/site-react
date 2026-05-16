@@ -1,8 +1,8 @@
 import * as S from './BannerFull.styles.jsx'
 
-function BannerFull({ children, titulo }) {
+function BannerFull({ children, titulo, style }) {
   return (
-    <S.Container>
+    <S.Container style={style}>
       {titulo && <S.Titulo>{titulo}</S.Titulo>}
 
       <S.Content>

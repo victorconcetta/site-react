@@ -14,7 +14,7 @@ const SwiperMod = ({ imagens = [] }) => {
         spaceBetween={0}
         breakpoints={{
           768: { slidesPerView: 1 },
-          1024: { slidesPerView: 2.2 },
+          1024: { slidesPerView: 1.8 },
         }}
         centeredSlides={true}
         loop={true}

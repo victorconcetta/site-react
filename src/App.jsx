@@ -6,12 +6,14 @@ import MenuPrincipal from './pages/menu.jsx'
 import Footer from './pages/footer.jsx'
 import Sobre from './pages/sobre.jsx'
 import Contato from './pages/contato.jsx'
+import ScrollToTop from "./components/ScrollToTop.jsx";
 
 
 function App() {
   return (
     <BrowserRouter>
       <div className="Container">
+            <ScrollToTop />
         <MenuPrincipal />
         <Routes>
     <Route path="/" element={<Home />} />

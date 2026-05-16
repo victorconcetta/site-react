@@ -7,39 +7,40 @@ align-items: center;
   padding: 0px;
   margin: 0px;
   width: 100%;
-  height: 70px;
+  height: 140px;
   background: var(--principal);
+  position: fixed;
+  z-index: 100;
 
 
-  @media (max-width: 900px) {
-  justify-content: space-between;
+ @media (max-width: 900px) {
+    height: 80px;
+    justify-content: space-between;
   }
 `
 export const DivLogo = styled.div`
-display: flex;
-align-items: center;
-justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: var(--principaldark);
   height: 100%;
   width: 20%;
   min-width: 200px;
-  
-   a{
-    text-decoration: none;
-    color: inherit;
+
+  img {
+    width: 100%;
+    height: 140px;
+    padding: 10px;
   }
 
   @media (max-width: 900px) {
-  min-width: 150px;
+    min-width: 120px;
+    width: auto;
+
+    img {
+      height: 80px;
+    }
   }
-
-p {
-  margin: 0px;
-  font-weight: bold;
-}
-
-
-
 `
 
 export const UlMenu = styled.ul`
@@ -72,6 +73,7 @@ export const LiMenu = styled.li`
   flex: 1;
   height: 100%;
   font-size: 1.5rem;
+  font-weight: 500;
   transition: 0.3s;
   
 
@@ -97,14 +99,14 @@ export const Hamburger = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-right: 50px;
-  width: 30px;
+  margin-right: 20px;
+  width: 28px;
   height: 20px;
   cursor: pointer;
 
-   @media (min-width: 900px) {
-   display: none;
-   }
+  @media (min-width: 900px) {
+    display: none;
+  }
 `
 export const MenuMobile = styled.div`
   display: flex;
