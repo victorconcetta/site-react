@@ -38,29 +38,29 @@ export const DivCentroTexto = styled.div`
   flex: 1;
   width: 100%;
   align-items: center;
-  text-align: justify;
+  text-align: left;
 
 h1 {
-    color: var(--principaldark);
+    color: var(--principaldarker);
     padding-bottom: 20px;
-    text-align: center;
+
 }
      p {
-    font-size: 30px;
+    font-size: 28px;
    } 
 
   @media (max-width: 1500px) {
     width: 100%;
     
    p {
-    font-size: 30px;
+    font-size: 26px;
    } 
   }
 
  @media (max-width: 768px) {
     
    p {
-    font-size: 20px;
+    font-size: 18px;
    } 
   }
 `
@@ -87,26 +87,29 @@ export const Ofertas = styled.div`
   }
 
   p {
-    font-size: clamp(16px, 2vw, 30px);
+    font-size: 1vw;
     font-weight: 600;
     position: relative;
     z-index: 1;
     text-align: center;
-      animation: piscar 1s ease-in-out infinite;
+    color: var(--principaldarker);
+    text-shadow: 2px 8px 17px rgba(0, 0, 0, 0.274);
+
   }
 
   a{
     text-decoration: none;
   }
-    @keyframes piscar {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0; }
-  }
 
-  @media (max-width: 1500px) {
+  @media (max-width: 768px) {
    margin-top: 0px;
    padding: 0px;
   }
+
+    p {
+    font-size: 3vw;
+    }
+
 `
 
 export const DivCentroImg = styled.div`
@@ -136,12 +139,7 @@ display: flex;
 justify-content: center;
   width: 70%;
   padding-bottom: 40px;
-  animation: piscar 1s ease-in-out infinite;
 
-   @keyframes piscar {
-    0%, 50% { opacity: 1; }
-    10% { opacity: 0; }
-   }
  @media (max-width: 1500px) {
     width: 100%;
  }

@@ -10,6 +10,10 @@ width: 100%;
 height: auto;
 gap: 30px;
 padding: 200px 0px 150px;
+
+@media (max-width: 1500px){
+padding: 100px 0px 150px;
+}
 `;
 
 

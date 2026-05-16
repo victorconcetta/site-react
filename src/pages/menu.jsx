@@ -3,6 +3,10 @@ import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import logo from "../assets/img/logo.png"
 
+function fecharMenu() {
+  setAberto(false)
+}
+
 function MenuPrincipal() {
   const [aberto, setAberto] = useState(false)
 
@@ -29,19 +33,19 @@ function MenuPrincipal() {
         </S.Hamburger>
       </S.Container>
 
-      {aberto && (
-        <S.MenuMobile>
-          <S.LiMenuMobile><Link to="/">Home</Link></S.LiMenuMobile>
-          <S.LinhaHor />
-            <S.LiMenuMobile><Link to="/sobre">Produtos</Link></S.LiMenuMobile>
-            <S.LinhaHor />
-      <S.LiMenuMobile><Link to="/contato">Ofertas</Link></S.LiMenuMobile>
-                  <S.LinhaHor />
-      <S.LiMenuMobile><Link to="/contato">Unidades</Link></S.LiMenuMobile>
-                  <S.LinhaHor />
-      <S.LiMenuMobile><Link to="/contato">Contato</Link></S.LiMenuMobile>
-        </S.MenuMobile>
-      )}
+{aberto && (
+  <S.MenuMobile>
+    <S.LiMenuMobile><Link to="/" onClick={fecharMenu}>Home</Link></S.LiMenuMobile>
+    <S.LinhaHor />
+    <S.LiMenuMobile><Link to="/sobre" onClick={fecharMenu}>Produtos</Link></S.LiMenuMobile>
+    <S.LinhaHor />
+    <S.LiMenuMobile><Link to="/contato" onClick={fecharMenu}>Ofertas</Link></S.LiMenuMobile>
+    <S.LinhaHor />
+    <S.LiMenuMobile><Link to="/contato" onClick={fecharMenu}>Unidades</Link></S.LiMenuMobile>
+    <S.LinhaHor />
+    <S.LiMenuMobile><Link to="/contato" onClick={fecharMenu}>Contato</Link></S.LiMenuMobile>
+  </S.MenuMobile>
+)}
     </>
   )
 }
