@@ -152,14 +152,15 @@ export const ListaProdutosLi = styled.li`
     transform: scale(1.05);
   }
    @media (max-width: 1200px) {
-    padding: 0px 20px;
-    gap: 10px;
+    padding: 10px 10px;
+        font-size: 16px;
+
   }
 
 
   @media (max-width: 900px) {
     font-size: 16px;
-    padding: 8px 0;
+    padding: 8px 10px;
   }
 `
 
