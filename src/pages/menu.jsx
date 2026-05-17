@@ -11,8 +11,17 @@ function MenuPrincipal() {
   const [subMobile, setSubMobile] = useState(false)
 
 useEffect(() => {
-  document.body.style.overflow = aberto ? 'hidden' : ''
-  return () => { document.body.style.overflow = '' }
+  if (aberto) {
+    document.body.style.overflow = 'hidden'
+    document.documentElement.style.overflow = 'hidden' // ← trava o <html> também
+  } else {
+    document.body.style.overflow = ''
+    document.documentElement.style.overflow = ''
+  }
+  return () => {
+    document.body.style.overflow = ''
+    document.documentElement.style.overflow = ''
+  }
 }, [aberto])
 
   const mostrarSub = subProdutos || location.pathname === '/sobre'
