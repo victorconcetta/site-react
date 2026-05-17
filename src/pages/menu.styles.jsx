@@ -173,11 +173,12 @@ export const MenuMobile = styled.div`
   align-items: center;
   background: var(--principallight);
   width: 100%;
-  overflow: hidden;
- position: fixed;
-  top: 70px; 
-  z-index: 99; 
-
+  z-index: 99;
+  position: fixed;
+  top: 70px;
+  left: 0;
+  max-height: calc(100vh - 70px);  /* ← não passa da tela */
+  overflow-y: auto;                 /* ← scroll interno */
 
   @media (min-width: 900px) {
     display: none;
@@ -186,8 +187,12 @@ export const MenuMobile = styled.div`
 
 export const Overlay = styled.div`
   position: fixed;
-  inset: 0;
-  z-index: 98;
+  top: 70px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 97; 
+  cursor: pointer;
 `
 
 export const LiMenuMobile = styled.li`

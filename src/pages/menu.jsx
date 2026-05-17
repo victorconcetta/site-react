@@ -64,7 +64,7 @@ function MenuPrincipal() {
 
       {aberto && (
         <>
-       <S.Overlay onClick={fecharMenu} />
+     
 <S.MenuMobile>
   <S.LiMenuMobile><Link to="/" onClick={fecharMenu}>Home</Link></S.LiMenuMobile>
   <S.LinhaHor />
@@ -97,6 +97,7 @@ function MenuPrincipal() {
   <S.LinhaHor />
   <S.LiMenuMobile><Link to="/contato" onClick={fecharMenu}>Contato</Link></S.LiMenuMobile>
 </S.MenuMobile>
+  <S.Overlay onClick={fecharMenu} />
         </>
       )}
     </>
