@@ -70,11 +70,7 @@ function Home() {
 
 <p>Os alimentos que vêm do campo carregam mais do que nutrientes. Carregam sol, terra e cuidado, colhidos no ponto certo e cheios de vida.</p>
   </S.DivCentroTexto>
-
-
 </S.DivCentro>
-
-
 
  </S.Container>
   </div>

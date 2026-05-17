@@ -7,11 +7,10 @@ align-items: center;
   padding: 0px;
   margin: 0px;
   width: 100%;
-  height: 140px;
+  height: 100px;
   background: var(--principal);
   position: fixed;
   z-index: 100;
-
 
  @media (max-width: 900px) {
     height: 70px;
@@ -23,22 +22,22 @@ export const DivLogo = styled.div`
   align-items: center;
   justify-content: center;
   height: 100%;
-  width: 20%;
-  min-width: 200px;
+  width: 140px;
+  margin-left: 50px;
 
   img {
     width: 100%;
-    height: 140px;
-    padding: 10px;
+    height: 100%;
   }
 
   @media (max-width: 900px) {
     min-width: 120px;
     width: 150px;
+      margin-left: 20px;
    
 
     img {
-      height: 80px;
+      height: 70px;
       width: 100%;
     }
   }
@@ -77,8 +76,6 @@ export const LiMenu = styled.li`
   font-weight: 500;
   transition: 0.3s;
   
-
-
   a{
     text-decoration: none;
     color: inherit;
@@ -95,6 +92,67 @@ export const LiMenu = styled.li`
   border-radius: 10px;
 
 `
+
+export const SubProdutos = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  color: #000000b0;
+  background: var(--principaldark);
+  z-index: 50;
+  position: fixed;
+  top: 100px;
+  cursor: pointer;
+
+  @media (max-width: 900px) {
+    top: 70px;
+    justify-content: flex-start;
+    overflow-x: auto;
+    scrollbar-width: none; 
+    &::-webkit-scrollbar { display: none; }
+  }
+`
+
+export const ListaProdutos = styled.ul`
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  margin: 0px;
+  padding: 0px 50px;
+
+  @media (max-width: 900px) {
+    justify-content: flex-start;
+    padding: 0px 16px;
+    gap: 24px;
+    width: max-content;  /* ← permite crescer além da tela */
+  }
+`
+
+export const ListaProdutosLi = styled.li`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0px;
+  margin: 0px;
+  font-size: 24px;
+  font-weight: 500;
+  transition: 0.5s;
+  white-space: nowrap;  /* ← evita quebra de texto */
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  @media (max-width: 900px) {
+    font-size: 16px;
+    padding: 8px 0;
+  }
+`
+
 
 export const Hamburger = styled.div`
   display: flex;
@@ -116,12 +174,22 @@ export const MenuMobile = styled.div`
   background: var(--principallight);
   width: 100%;
   overflow: hidden;
-  padding-top: 70px;
+ position: fixed;
+  top: 70px; 
+  z-index: 99; 
+
 
   @media (min-width: 900px) {
     display: none;
   }
 `
+
+export const Overlay = styled.div`
+  position: fixed;
+  inset: 0;
+  z-index: 98;
+`
+
 export const LiMenuMobile = styled.li`
   display: flex;
   justify-content: center;
@@ -152,4 +220,36 @@ export const LiMenuMobile = styled.li`
 
 `;
 
+export const SubMobile = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+  max-height: ${({ $aberto }) => $aberto ? '400px' : '0'};  /* ← animação suave */
+  transition: max-height 0.3s ease;
+`
 
+export const LiSubMobile = styled.li`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 10px;
+  font-size: 1.1rem;
+  font-weight: 400;
+  transition: 0.3s;
+  color: inherit;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+`
+
+export const SetaIcon = styled.span`
+  margin-left: 8px;
+  font-size: 0.8rem;
+  transition: 0.3s;
+  display: inline-block;
+  transform: ${({ $aberto }) => $aberto ? 'rotate(180deg)' : 'rotate(0deg)'};
+  `

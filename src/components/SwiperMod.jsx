@@ -22,7 +22,7 @@ const SwiperMod = ({ imagens = [] }) => {
         speed={800}
         navigation={true}
         autoplay={{
-          delay: 3000,
+          delay: 8000,
           disableOnInteraction: false,
         }}
       >

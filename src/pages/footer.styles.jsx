@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import cerca from '../assets/img/cerca.png'
 
 export const Container = styled.div`
 display: flex;
@@ -9,8 +10,11 @@ align-items: center;
   margin: 0px;
   width: 100%;
   min-height: 300px;
-  background: var(--principal);
-
+  background-color: var(--principal);
+  background-image: url(${cerca});
+ background-size: 400px;
+  background-position: bottom;
+  background-repeat: repeat-x;
 
   p {
     font-size: 20px;

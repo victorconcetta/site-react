@@ -6,8 +6,8 @@ function Footer() {
     <>
       <S.Container>
       
-        <h1>FOOTER</h1>
-        <p>Template exclusivo do Lord Victor</p>
+        <h1>QUITANDA SEU ZÉ</h1>
+        <p>o Frescor do Campo para Você</p>
         <p>Recuse imitações</p>
       </S.Container>
 

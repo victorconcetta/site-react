@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import ofertas from '../assets/img/ofertas.png'
+import bg from '../assets/img/bg.png'
 
 export const Container = styled.div`
 display: flex;
@@ -11,9 +12,11 @@ width: 100%;
 height: auto;
 gap: 30px;
 padding: 10px 0px 150px;
+
+
 `
 export const ContainerSwiper = styled.div`
-padding-top: 140px;
+padding-top: 100px;
 
   @media (max-width: 900px) {
 padding-top: 70px;
@@ -22,9 +25,14 @@ padding-top: 70px;
 `
 export const DivCentro = styled.div`
   display: flex;
-  width: 90%;
+  width: 100%;
   gap: 30px;
   align-items: center;
+  padding: 20px 10%;
+  background: #e0e0e0;
+
+
+  
 
   @media (max-width: 1500px) {
     flex-direction: column;
@@ -46,14 +54,14 @@ h1 {
 
 }
      p {
-    font-size: 28px;
+    font-size: 24px;
    } 
 
   @media (max-width: 1500px) {
     width: 100%;
     
    p {
-    font-size: 26px;
+    font-size: 22px;
    } 
   }
 
