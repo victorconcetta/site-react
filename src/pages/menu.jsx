@@ -62,44 +62,40 @@ function fecharMenu() {
         </S.SubProdutos>
       )}
 
-      {aberto && (
-        <>
-     
-<S.MenuMobile>
-  <S.LiMenuMobile><Link to="/" onClick={fecharMenu}>Home</Link></S.LiMenuMobile>
-  <S.LinhaHor />
-
-  {/* Produtos — sem Link, só abre o acordeão */}
-  <S.LiMenuMobile onClick={() => setSubMobile(!subMobile)}>
-    Produtos <S.SetaIcon $aberto={subMobile}>▼</S.SetaIcon>
-  </S.LiMenuMobile>
-  <S.SubMobile $aberto={subMobile}>
-    <S.LinhaHor />
-    <S.LiSubMobile onClick={fecharMenu}>Hortaliças</S.LiSubMobile>
-    <S.LinhaHor />
-    <S.LiSubMobile onClick={fecharMenu}>Legumes</S.LiSubMobile>
-    <S.LinhaHor />
-    <S.LiSubMobile onClick={fecharMenu}>Frutas</S.LiSubMobile>
-    <S.LinhaHor />
-    <S.LiSubMobile onClick={fecharMenu}>Frutas Exóticas</S.LiSubMobile>
-    <S.LinhaHor />
-    <S.LiSubMobile onClick={fecharMenu}>Doces do Campo</S.LiSubMobile>
-    <S.LinhaHor />
-    <S.LiSubMobile onClick={fecharMenu}>Que-Queijo</S.LiSubMobile>
-    <S.LinhaHor />
-    <S.LiSubMobile onClick={fecharMenu}>Café do Zé</S.LiSubMobile>
-  </S.SubMobile>
-
-  <S.LinhaHor />
-  <S.LiMenuMobile><Link to="/contato" onClick={fecharMenu}>Ofertas</Link></S.LiMenuMobile>
-  <S.LinhaHor />
-  <S.LiMenuMobile><Link to="/contato" onClick={fecharMenu}>Unidades</Link></S.LiMenuMobile>
-  <S.LinhaHor />
-  <S.LiMenuMobile><Link to="/contato" onClick={fecharMenu}>Contato</Link></S.LiMenuMobile>
-</S.MenuMobile>
-  <S.Overlay onClick={fecharMenu} />
-        </>
-      )}
+  {aberto && (
+  <>
+    <S.MenuMobile>
+      <S.LiMenuMobile><Link to="/" onClick={fecharMenu}>Home</Link></S.LiMenuMobile>
+      <S.LinhaHor />
+      <S.LiMenuMobile onClick={() => setSubMobile(!subMobile)}>
+        Produtos <S.SetaIcon $aberto={subMobile}>▼</S.SetaIcon>
+      </S.LiMenuMobile>
+      <S.SubMobile $aberto={subMobile}>
+        <S.LinhaHor />
+        <S.LiSubMobile onClick={fecharMenu}>Hortaliças</S.LiSubMobile>
+        <S.LinhaHor />
+        <S.LiSubMobile onClick={fecharMenu}>Legumes</S.LiSubMobile>
+        <S.LinhaHor />
+        <S.LiSubMobile onClick={fecharMenu}>Frutas</S.LiSubMobile>
+        <S.LinhaHor />
+        <S.LiSubMobile onClick={fecharMenu}>Frutas Exóticas</S.LiSubMobile>
+        <S.LinhaHor />
+        <S.LiSubMobile onClick={fecharMenu}>Doces do Campo</S.LiSubMobile>
+        <S.LinhaHor />
+        <S.LiSubMobile onClick={fecharMenu}>Que-Queijo</S.LiSubMobile>
+        <S.LinhaHor />
+        <S.LiSubMobile onClick={fecharMenu}>Café do Zé</S.LiSubMobile>
+      </S.SubMobile>
+      <S.LinhaHor />
+      <S.LiMenuMobile><Link to="/contato" onClick={fecharMenu}>Ofertas</Link></S.LiMenuMobile>
+      <S.LinhaHor />
+      <S.LiMenuMobile><Link to="/contato" onClick={fecharMenu}>Unidades</Link></S.LiMenuMobile>
+      <S.LinhaHor />
+      <S.LiMenuMobile><Link to="/contato" onClick={fecharMenu}>Contato</Link></S.LiMenuMobile>
+    </S.MenuMobile>
+    <S.Overlay onClick={fecharMenu} />
+  </>
+)}
     </>
   )
 }

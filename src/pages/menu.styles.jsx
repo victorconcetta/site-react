@@ -124,11 +124,16 @@ export const ListaProdutos = styled.ul`
   margin: 0px;
   padding: 0px 50px;
 
+    @media (max-width: 1200px) {
+    padding: 0px 20px;
+    gap: 10px;
+  }
+
   @media (max-width: 900px) {
     justify-content: flex-start;
-    padding: 0px 16px;
+    padding: 0px 14px;
     gap: 24px;
-    width: max-content;  /* ← permite crescer além da tela */
+    width: max-content; 
   }
 `
 
@@ -146,6 +151,11 @@ export const ListaProdutosLi = styled.li`
   &:hover {
     transform: scale(1.05);
   }
+   @media (max-width: 1200px) {
+    padding: 0px 20px;
+    gap: 10px;
+  }
+
 
   @media (max-width: 900px) {
     font-size: 16px;
@@ -167,6 +177,15 @@ export const Hamburger = styled.div`
     display: none;
   }
 `
+export const EspacadorMobile = styled.div`
+  width: 100%;
+  display: none;
+
+  @media (max-width: 900px) {
+    display: block;
+  }
+`
+
 export const MenuMobile = styled.div`
   display: flex;
   flex-direction: column;
@@ -177,8 +196,8 @@ export const MenuMobile = styled.div`
   position: fixed;
   top: 70px;
   left: 0;
-  max-height: calc(100vh - 70px);  /* ← não passa da tela */
-  overflow-y: auto;                 /* ← scroll interno */
+  max-height: calc(100vh - 70px);
+  overflow-y: auto;
 
   @media (min-width: 900px) {
     display: none;
